@@ -2,26 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* for Header Section*/
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.header {
+  border: 2px solid rgb(197, 197, 197);
+  border-radius: 30px;
+  background-color: aqua;
+  opacity: 50%;
+  /* justify-content: space-between; */
+  margin-top:20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  height: 50px;
+  align-items: center;
   }
+
+.title-Header {
+  text-align: left;
+  font-size: 30px;
+  margin-left: 45px;
+  font-weight: 400;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.header-Options{
+  display: flex;
+  gap: 70px;
+  font-size: 20px;
+  margin-left: 400px;
+  font-weight: 500;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+/*  Footer   */
+
+.footer {
+  color:aliceblue;
+  margin-top: 150px;
+  background-color: black;
 }
+
+.footer-Options {
+  margin-left: 540px;
+  display: flex;
+  gap:40px;
+}
+
+.footer-Options:hover {
+  color:brown
+}
+
+.footerLink-Options {
+  margin-left: 500px;
+  display: flex;
+  gap:40px;
+
+}
+
+
+.Footer-Text {
+  display: flex;
+  margin-left:550px;
+}
+
+.profile {
+  width : 300px;
+  height: 300px;
+  background-image: url('../app/public/profile.jpg') ;
+  background-size: cover;
+  background-position: center;
+  margin-left: 900px;
+  border-radius:15px;
+  margin-top:-250px;
+}
+.first-Line{
+ margin-left: 200px;
+ margin-top:60px;
+ font-size: 50px;
+}
+
+.second-Line{
+  margin-left: 200px;
+ 
+  font-size: 50px;
+ }
+ .third-Line{
+  margin-left: 200px;
+  
+  font-size: 50px;
+ }
